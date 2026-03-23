@@ -11,25 +11,25 @@ const Hero = () => {
           initial={{ x: -50, opacity: 0 }}
           animate={{ x: 0, opacity: 1 }}
           transition={{ duration: 0.6 }}
-          className="text-center lg:text-left"
+          className="text-center lg:text-left max-w-2xl"
         >
-          <h1 className="text-4xl lg:text-5xl font-bold mb-4 text-gray-900 dark:text-white">
-            Fast, Secure & Smart Microloan Solutions
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4 text-gray-900 dark:text-white">
+            Fast,<span className="text-cyan-500"> Secure</span> & <span className="text-cyan-500">Smart</span> Microloan Solutions
           </h1>
 
-          <p className="text-lg mb-6 text-gray-600 dark:text-gray-300">
+          <p className="text-lg mb-6 text-gray-600 dark:text-gray-300 max-w-xl">
             Apply for microloans easily and track approvals, EMI plans, and repayments in one platform.
           </p>
 
           <div className="flex flex-wrap gap-4 justify-center lg:justify-start">
             <Link to="/apply-loan">
-              <button className="bg-cyan-500 text-white px-6 py-3 rounded-lg font-semibold hover:bg-cyan-600 hover:scale-105 transition-all dark:bg-cyan-500 dark:hover:bg-cyan-400">
+              <button className="bg-cyan-500 cursor-pointer text-white px-6 py-3 rounded-lg font-semibold hover:bg-cyan-600 hover:scale-105 transition-all dark:bg-cyan-500 dark:hover:bg-cyan-400">
                 Apply for Loan
               </button>
             </Link>
 
             <Link to="/all-loans">
-              <button className="border-2 border-cyan-500 text-cyan-600 px-6 py-3 rounded-lg font-semibold hover:bg-cyan-500 hover:text-white transition-colors dark:border-cyan-400 dark:text-cyan-400 dark:hover:bg-cyan-500 dark:hover:text-white">
+              <button className="border-2 cursor-pointer border-cyan-500 text-cyan-600 px-6 py-3 rounded-lg font-semibold hover:bg-cyan-500 hover:text-white transition-colors dark:border-cyan-400 dark:text-cyan-400 dark:hover:bg-cyan-500 dark:hover:text-white">
                 Explore Loans
               </button>
             </Link>
@@ -72,7 +72,7 @@ const Hero = () => {
           <img
             src="/assets/Hero-image.png"
             alt="Digital wallet and mobile banking - LoanSphere"
-            className="relative z-10 w-full h-auto rounded-xl drop-shadow-xl dark:drop-shadow-[0_0_30px_rgba(6,182,212,0.15)]"
+            className="relative z-10 w-full h-auto rounded-xl drop-shadow-xl animate-float dark:drop-shadow-[0_0_30px_rgba(6,182,212,0.15)]"
           />
         </motion.div>
       </div>

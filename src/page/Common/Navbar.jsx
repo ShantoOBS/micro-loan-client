@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Link, NavLink } from 'react-router';
 import { useAuth } from '../../hooks/useAuth';
-import { ThemeContext } from '../../Provider/ThemProvider';
+import { ThemeContext } from '../../Provider/ThemeContext.jsx';
 import { useContext } from 'react';
 import { LuSunMoon } from "react-icons/lu";
 import { BsFillMoonStarsFill } from "react-icons/bs";
@@ -28,8 +28,8 @@ export default function Navbar() {
   const closeMobileMenu = () => setMobileMenuOpen(false);
 
   return (
-    <nav className="sticky top-0 z-50 w-full border-b border-gray-200 bg-white/95 backdrop-blur-md dark:border-gray-700 dark:bg-gray-900/95">
-      <div className="mx-auto max-w-7xl px-4 md:px-6 lg:px-8">
+    <nav className="sticky top-0 z-50 w-full border-b border-gray-200 bg-transparent dark:border-gray-700 backdrop-blur-md ">
+      <div className="mx-auto max-w-7xl px-4 md:px-6 ">
         <div className="flex h-16 items-center justify-between">
           {/* Logo */}
           <div>
