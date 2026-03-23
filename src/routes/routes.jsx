@@ -7,6 +7,7 @@ import Contact from "../page/Contact/Contact";
 import Login from "../page/Login/Login";
 import Register from "../page/Register/Register";
 import Dashboard from "../page/Dashboard/Dashboard";
+import ApplyLoan from "../page/ApplyLoan/ApplyLoan";
 
 export const router = createBrowserRouter([
   {
@@ -20,6 +21,7 @@ export const router = createBrowserRouter([
       { path: "login", element: <Login></Login> },
       { path: "register", element: <Register></Register> },
       { path: "dashboard", element: <Dashboard></Dashboard> },
+      { path: "apply-loan", element: <ApplyLoan></ApplyLoan> },
     ],
   },
 ]);

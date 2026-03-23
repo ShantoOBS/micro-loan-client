@@ -1,10 +1,12 @@
 import React from 'react'
+import Hero from './Components/Hero'
+
 
 export default function Home() {
   return (
     <div>
 
-        <p>Home</p>
+        <Hero></Hero>
       
     </div>
   )
